@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>lrocco boots simulator</title>
+<style>
+.lrocco_result { position: relative; }
+.lrocco_result > div {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+label {
+  display: inline-block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ddd;
+}
+</style>
+</head>
+<body>
+  <h1>Lrocco Boots Simulator</h1>
+  <dl>
+    <dt>ヴァンプ</dt>
+    <dd>
+      <input type="radio" id="btn-v1" style="display:none" checked="checked" onclick="imgChange1.src='lup_vmp_1.png'">
+      <label for="btn-v1" title="1" style="background:#7A7458;">1</label>
+      <input type="radio" id="btn-v2" style="display:none" onclick="imgChange1.src='lup_vmp_2.png'">
+      <label for="btn-v2" title="2"style="background:#6E2725;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>シャフト</dt>
+    <dd>
+      <input type="radio" id="btn-s1" style="display:none" checked="checked" onclick="imgChange2.src='lup_sft_1.png'">
+      <label for="btn-s1" title="1" style="background:#704D4A;">1</label>
+      <input type="radio" id="btn-s2" style="display:none" onclick="imgChange2.src='lup_sft_2.png'">
+      <label for="btn-s2" title="2" style="background: #B37345;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>カウンター</dt>
+    <dd>
+      <input type="radio" id="btn-c1" style="display:none" checked="checked" onclick="imgChange3.src='lup_cnt_1.png'">
+      <label for="btn-c1" title="1" style="background:#747673;">1</label>
+      <input type="radio" id="btn-c2" style="display:none" onclick="imgChange3.src='lup_cnt_2.png'">
+      <label for="btn-c2" title="2" style="background: #6E2725;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>タン／フォルスタン</dt>
+    <dd>
+      <input type="radio" id="btn-t1" style="display:none" checked="checked" onclick="imgChange4.src='lup_tng_1.png'">
+      <label for="btn-t1" title="1" style="background:#AD8677;">1</label>
+      <input type="radio" id="btn-t2" style="display:none" onclick="imgChange4.src='lup_tng_2.png'">
+      <label for="btn-t2" title="2" style="background: #563732;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>ロールトップ</dt>
+    <dd>
+      <input type="radio" id="btn-r1" style="display:none" checked="checked" onclick="imgChange5.src='lup_rtp_1.png'">
+      <label for="btn-r1" title="1" style="background:#434142;">1</label>
+      <input type="radio" id="btn-r2" style="display:none" onclick="imgChange5.src='lup_rtp_2.png'">
+      <label for="btn-r2" title="2" style="background: #6E2725;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>ミッドソール</dt>
+    <dd>
+      <input type="radio" id="btn-m1" style="display:none" checked="checked" onclick="imgChange6.src='lup_msl_1.png'">
+      <label for="btn-m1" title="1" style="background:#724D4E;">1</label>
+      <input type="radio" id="btn-m2" style="display:none" onclick="imgChange6.src='lup_msl_2.png'">
+      <label for="btn-m2" title="2" style="background: #440912;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>アウトソール</dt>
+    <dd>
+      <input type="radio" id="btn-o1" style="display:none" checked="checked" onclick="imgChange7.src='lup_osl_1.png'">
+      <label for="btn-o1" title="1" style="background:#5D636A;">1</label>
+      <input type="radio" id="btn-o2" style="display:none" onclick="imgChange7.src='lup_osl_2.png'">
+      <label for="btn-o2" title="2" style="background: #DDCABB;">2</label>
+    </dd>
+  </dl>
+  <dl>
+    <dt>シューレース</dt>
+    <dd>
+      <input type="radio" id="btn-l1" style="display:none" checked="checked" onclick="imgChange8.src='lup_lac_1.png'">
+      <label for="btn-l1" title="1" style="background:#494756;">1</label>
+      <input type="radio" id="btn-l2" style="display:none" onclick="imgChange8.src='lup_lac_2.png'">
+      <label for="btn-l2" title="2" style="background: #E3DBC7;">2</label>
+    </dd>
+  </dl>
+  <div class="lrocco_result">
+    <div><img src="lup_vmp_1.png" name="imgChange1" alt="ヴァンプ" width="40%" height="40%"></div>
+    <div><img src="lup_sft_1.png" name="imgChange2" alt="シャフト" width="40%" height="40%"></div>
+    <div><img src="lup_cnt_1.png" name="imgChange3" alt="カウンター" width="40%" height="40%"></div>
+    <div><img src="lup_tng_1.png" name="imgChange4" alt="タン／フォルスタン" width="40%" height="40%"></div>
+    <div><img src="lup_rtp_1.png" name="imgChange5" alt="ロールトップ" width="40%" height="40%"></div>
+    <div><img src="lup_msl_1.png" name="imgChange6" alt="ミッドソール" width="40%" height="40%"></div>
+    <div><img src="lup_osl_1.png" name="imgChange7" alt="アウトソール" width="40%" height="40%"></div>
+    <div><img src="lup_lac_1.png" name="imgChange8" alt="シューレース" width="40%" height="40%"></div>
+    <div><img src="lup_bks_1.png" alt="バックステイ" width="40%" height="40%"></div>
+    <div><img src="lup_base.png" alt="レースアップ" width="40%" height="40%"></div>
+</div>
+</body>
+</html>
